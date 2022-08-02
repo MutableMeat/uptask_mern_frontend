@@ -50,7 +50,9 @@ const Login = () => {
     <>
       <h1 className="text-sky-600 font-black text-6xl capitalize">
         Inicia sesion y administra tus{" "}
-        <span className="text-slate-700">proyectos</span>
+        <span className="text-slate-700" data-cy="titulo">
+          proyectos
+        </span>
       </h1>
 
       {msg && <Alerta alerta={alerta} />}
