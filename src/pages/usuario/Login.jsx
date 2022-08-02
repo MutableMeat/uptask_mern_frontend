@@ -49,9 +49,9 @@ const Login = () => {
   return (
     <>
       <h1 className="text-sky-600 font-black text-6xl capitalize">
-        Inicia sesion y administra tus{" "}
+        Inicia sesión y administra tus{" "}
         <span className="text-slate-700" data-cy="titulo">
-          proyectos
+          Proyectos
         </span>
       </h1>
 
@@ -59,9 +59,10 @@ const Login = () => {
 
       <form
         className="my-10 bg-white shadow rounded-lg p-10"
+        data-cy="form-login"
         onSubmit={handleSubmit}
       >
-        <div className="my-5">
+        <div className="my-5" data-cy="input-email">
           <label
             htmlFor="email"
             className=" text-gray-600 block text-xl font-bold"
@@ -77,7 +78,7 @@ const Login = () => {
             className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
           />
         </div>
-        <div className="my-5">
+        <div className="my-5" data-cy="input-password">
           <label
             htmlFor="password"
             className=" text-gray-600 block text-xl font-bold"
@@ -98,6 +99,7 @@ const Login = () => {
           type="submit"
           value="Iniciar sesión"
           className="bg-sky-700 mb-5  text-white uppercase font-bold py-3 hover:cursor-pointer w-full rounded transition-colors hover:bg-sky-800"
+          data-cy="submit-login"
         />
       </form>
 
@@ -105,6 +107,7 @@ const Login = () => {
         <Link
           to="/registrar"
           className="block text-center my-5 text-slate-500 text-sm uppercase"
+          data-cy="nueva-cuenta"
         >
           ¿No tiene una cuenta? Registrate
         </Link>
