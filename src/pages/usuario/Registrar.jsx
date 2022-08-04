@@ -76,7 +76,7 @@ const Registrar = () => {
         <span className="text-slate-700">proyectos</span>
       </h1>
 
-      {msg && <Alerta alerta={alerta} />}
+      <div data-cy="alerta-registro">{msg && <Alerta alerta={alerta} />}</div>
 
       <form
         onSubmit={handleSubmit}
